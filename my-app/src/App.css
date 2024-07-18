@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures the body and html take up full viewport height */
+    font-family: 'Arial', sans-serif;
+    background: url("https://t3.ftcdn.net/jpg/04/78/35/22/360_F_478352239_ckoEVDJZX54tvAzxpL3F7UOr2qoXx0wV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Prevents scrollbars */
+  }
+  
+  #root {
+    height: 100%; /* Ensures #root takes up full viewport height */
+  }
+  
+  .heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 30px auto;
+    color: #e80caa;
+    background: linear-gradient(to right, #fd5d87, #f050f3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  .button {
+    display: block; /* Ensures it takes full width available */
+    margin: 0 auto; /* Centers horizontally */
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(to right, #2283d7, #1d59ab);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(to right, #2282d772, #3fd5e0);
+    transform: translateY(-3px);
+    color: black;
+  }
+  
